@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import PokemonImage from './components/PokemonImage'
+import "./App.css";
+import PokemonContainer from "./components/PokemonContainer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <PokemonImage pokemonName='ditto'/>
-  )
+  return <PokemonContainer />;
 }
 
-export default App
+export default App;
