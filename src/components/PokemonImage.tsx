@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
-const PokemonImage: React.FC<{ pokemonName: string }> = ({ pokemonName }) => {
+type PokemonImage = {
+    pokemonName: string;
+}
+const PokemonImage= ({ pokemonName }: PokemonImage) => {
     const [imageUrl, setImageUrl] = useState<string | null>(null);
   
     useEffect(() => {
